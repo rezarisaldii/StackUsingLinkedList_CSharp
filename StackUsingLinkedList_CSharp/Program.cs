@@ -43,6 +43,12 @@ namespace StackUsingLinkedList_CSharp
             Console.WriteLine("\n" + element + " pushed.");
         }
 
+        public void pop()
+        {
+            Console.WriteLine("\nThe element is: " + top.info);
+            top = top.next; //Make top point to the next node in sequence
+        }
+
         static void Main(string[] args)
         {
         }
